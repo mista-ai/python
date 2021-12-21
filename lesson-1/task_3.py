@@ -1,3 +1,7 @@
 # task 1.3
-n = int(input("Введите число n: "))
-print(123 * n)
+n = input("Введите число n: ")
+result = int(n) + int(n + n) + int(n + n + n)
+# если n >= 0 и n <= 10
+# result = 123 * int(n)
+
+print(result)
