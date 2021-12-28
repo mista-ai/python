@@ -22,7 +22,7 @@ while True:
                         print("Wrong input. Enter a natural number.")
                     else:
                         for i in range(amount):
-                            product = {}
+                            product = dict()
                             product["name"] = input("Enter name of product: ")
                             while True:
                                 price = input("Enter price of product: ")
