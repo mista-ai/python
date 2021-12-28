@@ -43,12 +43,13 @@ def leap_year(year):
 
 
 def tel_check(tel):
-    result = tel.replace(' ', '').replace('-','').replace('-','').replace('(','').replace(')','')
+    result = tel.replace(' ', '').replace('-', '').replace('-', '').replace('(', '').replace(')', '')
     if result[0] == '+':
         result = result[1:]
     if result.isdigit():
         return True
     return False
+
 
 if __name__ == "__main__":
     name = input("Enter your name: ")
@@ -72,5 +73,4 @@ if __name__ == "__main__":
             break
         else:
             print("Wrong input.")
-    user_data(name = name, lastname = lastname, city = city, birthdate = birthdate, email = email, tel = tel)
-
+    user_data(name=name, lastname=lastname, city=city, birthdate=birthdate, email=email, tel=tel)

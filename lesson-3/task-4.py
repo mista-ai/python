@@ -1,7 +1,7 @@
 def my_func(x, y):
     assert x > 0, "X is negative"
     assert (y < 0 and type(y) is int), "Y is not negative int"
-    return x ** y
+    return round(x ** y, 7)
 
 
 def my_func_two(x, y):
@@ -10,7 +10,7 @@ def my_func_two(x, y):
     result = 1
     for i in range(-y):
         result /= x
-    return result
+    return round(result, 7)
 
 
 if __name__ == "__main__":
